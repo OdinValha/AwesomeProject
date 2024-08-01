@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 
+import { StyleSheet, Text, View, TextInput, Button, Image } from "react-native";
 import Welcome from './screens/Welcome';
 import Ex01 from './screens/week2/Ex01';
 import Ex02 from './screens/week2/Ex02';
@@ -13,22 +14,31 @@ import Ex08 from './screens/week2/Ex08';
 import Ex09 from './screens/week2/Ex09';
 import Ex10 from './screens/week2/Ex10';
 import Ex11 from './screens/week2/Ex11';
-
+import Test from './screens/week3/test';
+import Travel from './screens/week3/Travel';
+import Resort from './screens/week3/Resort';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
 
 
 export default function App() {
   return (
-    // <Welcome />
-    // <Ex01 />
-    // <Ex02 />
-    // <Ex03 />
-    // <Ex04 />
-    // <Ex05 />
-    // <Ex06 />
-    // <Ex07 />  
-    // <Ex08 />
-    // <Ex09 />
-    <Ex10 /> 
-    // <Ex11 />
+    // < Welcome />
+    // < Ex01 />
+    // < Ex02 />
+    // < Ex03 />
+    // < Ex04 />
+    // < Ex05 />
+    // < Ex06 />
+    // < Ex07 />  
+    // < Ex08 />
+    // < Ex09 />
+    // < Ex10 /> 
+    // < Ex11 />
+    // < Test />
+    // < Travel />
+    // < Resort />
+    <Home />
+    // <FlatListExample />
   );
 }
