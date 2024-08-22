@@ -1,44 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-
-import { StyleSheet, Text, View, TextInput, Button, Image } from "react-native";
-import Welcome from './screens/Welcome';
-import Ex01 from './screens/week2/Ex01';
-import Ex02 from './screens/week2/Ex02';
-import Ex03 from './screens/week2/Ex03';
-import Ex04 from './screens/week2/Ex04';
-import Ex05 from './screens/week2/Ex05';
-import Ex06 from './screens/week2/Ex06';
-import Ex07 from './screens/week2/Ex07';
-import Ex08 from './screens/week2/Ex08';
-import Ex09 from './screens/week2/Ex09';
-import Ex10 from './screens/week2/Ex10';
-import Ex11 from './screens/week2/Ex11';
-import Test from './screens/week3/test';
-import Travel from './screens/week3/Travel';
-import Resort from './screens/week3/Resort';
-import Home from './screens/week6/Home';
-import FlatListExample from './screens/week6/FlatListExample';
-
+import HomeStack2 from './navigations/HomeStack2';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
 
 export default function App() {
-  return (
-    // < Welcome />
-    // < Ex01 />
-    // < Ex02 />
-    // < Ex03 />
-    // < Ex04 />
-    // < Ex05 />
-    // < Ex06 />
-    // < Ex07 />  
-    // < Ex08 />
-    // < Ex09 />
-    // < Ex10 /> 
-    // < Ex11 />
-    // < Test />
-    // < Travel />
-    // < Resort />
-    <Home />
-    // <FlatListExample />
-  );
+    return (
+        <NavigationContainer>
+            {/* <HomeStack2 /> */}
+            {/* <BottomTab /> */}
+            <RootStack />
+        </NavigationContainer>
+    );
 }
