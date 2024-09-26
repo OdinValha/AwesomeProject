@@ -9,9 +9,9 @@ export default function TodoList() {
     // const navigation = useNavigation();
     const [todos, setTodos] = useState(
         [
-            { id: '1', completed: false, title: "exercise @ 7.00" },
-            { id: '2', completed: false, title: "meeting @ 9.00" },
-            { id: '3', completed: false, title: "go to cinema @ 19.00" },
+            // { id: '1', completed: false, title: "exercise @ 7.00" },
+            // { id: '2', completed: false, title: "meeting @ 9.00" },
+            // { id: '3', completed: false, title: "go to cinema @ 19.00" },
         ]
     );
 
@@ -21,8 +21,9 @@ export default function TodoList() {
         // READ ITEMS FROM STORAGE
         let data = await TodoStorage.readItems();
         // console.log("data:", data);
+
         // SET STATE - WRITE CODE HERE
-        setTodos(data)
+
     };
 
     useEffect(()=>{ onLoad(); },[]);
@@ -39,7 +40,7 @@ export default function TodoList() {
         setTodos(t);               
 
         // WRITE ITEM TO STORAGE - WRITE CODE HERE
-        TodoStorage.writeItems(t);
+        
     };     
     const onUpdate = (new_title, id) => {   
         //CLONE ARRAY FIRST
@@ -53,7 +54,7 @@ export default function TodoList() {
         setTodos(t);
         
         // WRITE ITEM TO STORAGE - WRITE CODE HERE
-        TodoStorage.writeItems(t)
+        
     }; 
     const onCheck = (id) => {
         let t = [...todos];
@@ -63,7 +64,7 @@ export default function TodoList() {
         setTodos(t);        
         
         // WRITE ITEM TO STORAGE - WRITE CODE HERE        
-        TodoStorage.writeItems(t)
+
     };   
     const onDelete = (id) => {   
         //CLONE ARRAY FIRST
@@ -74,7 +75,7 @@ export default function TodoList() {
         setTodos(t);                
         
         // REMOVE AN ITEM FROM STORAGE - WRITE CODE HERE
-        TodoStorage.writeItems(t)
+        
     };  
 
 

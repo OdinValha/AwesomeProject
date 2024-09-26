@@ -3,7 +3,7 @@ import { View, Text, TextInput, StyleSheet, ScrollView } from "react-native";
 import Height from "../../components/week9/Height";
 import WeightChart from "../../components/week9/WeightChart";
 
-export default function YourHealth() {
+export default function Weight() {
 
   return (
     <ScrollView style={styles.container}>
